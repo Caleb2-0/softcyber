@@ -1,0 +1,255 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar li a
+{
+    text-decoration: none;
+}
+.navbar li
+{
+    list-style: none;
+}
+header
+{
+    width: 100%;
+    height: 10vh;
+    background: #f2f5f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.logo
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0f1519;
+    text-transform: uppercase;
+}
+.tongle
+{
+    display: none;
+}
+.navbar ul
+{
+    display: flex;
+}
+.navbar ul li a
+{
+    display: block;
+    color: #0f1519;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.navbar ul li a:hover
+{
+    color: #e3e5e4;
+    background: #016070;
+}
+.navbar ul li a.active
+{
+    color: #e3e5e4;
+    background: #016070;
+}
+footer
+{
+    background: #016070;
+    width: 100%;
+    height: fit-content;
+    position: sticky;
+    bottom: 0;
+}
+.social a img
+{
+    width: 2rem;
+    height: 2rem;
+}
+.social a
+{
+    padding: 0 0.5rem;
+    margin: 5px 1.5rem;
+}
+.social
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.social .icon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social .icon label
+{
+    color: whitesmoke;
+}
+.wrapper .links
+{
+    width: fit-content;
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper .links a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 2px 1rem;
+    margin: 2px 0.4rem;
+}
+.copy
+{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.copy p
+{
+    color: #e3e5e4;
+    font-weight: 400;
+}
+main h1
+{
+    text-align: center;
+}
+main p
+{
+    padding: 0.8rem;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formwrap
+{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.formwrap form
+{
+    width: 35rem;
+    padding: 1rem;
+    align-items: center;
+    
+}
+.formwrap form input,textarea
+{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: none;
+    background: lightgrey;
+    align-items: center;
+}
+.formwrap form textarea
+{
+    height: 10rem;
+    resize: none;
+}
+.formwrap form button
+{
+    width: 6rem;
+    height: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+}
+@media only screen and (max-width:1320px)
+{
+    header
+    {
+        padding: 0 25px;
+    }
+}
+@media only screen and (max-width:1100px)
+{
+    header
+    {
+        padding: 0 15px;
+    }
+    .navbar ul li a
+    {
+        font-size: 0.9rem;
+    }
+    .logo
+    {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:900px)
+{
+    .logo
+    {
+        font-size: 1.5rem;
+    }
+    .tongle
+    {
+        display: block;
+        cursor: pointer;
+    }
+    .tongle .line
+    {
+        width: 30px;
+        height: 3px;
+        background: black;
+        margin: 6px 0;
+    }
+    .navbar
+    {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: whitesmoke;
+        transition: 0.5s ease;
+        overflow: hidden;
+    }
+    .navbar.active
+    {
+        height: 100vh;
+    }
+    .navbar.active ul
+    {
+        opacity: 1;
+    }
+    .navbar ul
+    {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .navbar ul li a
+    {
+        margin-bottom: 10px;
+        color: black;
+    }
+    .links a
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
