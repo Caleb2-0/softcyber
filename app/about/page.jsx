@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const page = () => {
   return (
-    <div className='w-full'>
+    <div className='flex flex-col w-full'>
       <h2 className='text-center text-4xl mb-10'>About us</h2>
       <motion.div initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
