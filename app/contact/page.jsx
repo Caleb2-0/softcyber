@@ -57,7 +57,7 @@ export default async function Page() {
           <Floating id='phone' label='Phone number (Optional)' type='tel'/>
           <Floating id='subject' label='Subject' type='text'/>
           <FTextArea id='message' label='Your message...'/>
-          <button className='bg-[#2f7f6d] hover:bg-sky-400 text-white text-[20px] py-2 w-full m-auto mt-3 cursor-pointer rounded-lg active:bg-amber-100 active:text-gray-500'>Send</button>
+          <button className='bg-black hover:bg-gray-800 text-white text-[20px] py-2 w-full m-auto mt-3 cursor-pointer rounded-lg active:bg-amber-100 active:text-gray-500'>Send</button>
           <p className='text-center'>By continueing, you agree to be contacted through the details you have provided.</p>
         </form>
       </div>

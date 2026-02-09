@@ -53,13 +53,13 @@ export default function QuoteModal({
           <p><strong>Cost:</strong> ${price}</p>
         </div>
 
-        <input
+        <form action="">
+          <input
           className="mt-4 w-full rounded border p-2"
           placeholder="Email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          required
-        />
+          required />
 
         <input
           className="mt-2 w-full rounded border p-2"
@@ -71,18 +71,19 @@ export default function QuoteModal({
         <div className="mt-4 flex gap-3">
           <button
             onClick={onClose}
-            className="w-full rounded border py-2"
+            className="w-full rounded border py-2 cursor-pointer"
           >
             Cancel
           </button>
           <button
             onClick={submitQuote}
             disabled={loading}
-            className="w-full rounded bg-black py-2 text-white"
+            className="w-full rounded bg-black py-2 text-white hover:bg-gray-800 active:bg-amber-100 active:text-gray-800 cursor-pointer"
           >
             {loading ? "Sending..." : "Send"}
           </button>
         </div>
+        </form>
       </div>
     </div>
   );

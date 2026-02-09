@@ -9,6 +9,8 @@ import {
   faNetworkWired,
   faBuilding,
   faMobile,
+  faPrint,
+  faLaptop
 } from "@fortawesome/free-solid-svg-icons";
 
 export interface Product {
@@ -106,15 +108,22 @@ export const solutionsData: SolutionCategory[] = [
   },
   {
     id: "office-dev",
-    title: "Office Development Solutions",
+    title: "IT Essentials",
     description: "Digital office productivity systems",
     products: [
       {
-        id: "office-standard",
-        name: "Standard",
+        id: "office-essential",
+        name: "Office Development Solutions",
         description: "Office automation & collaboration",
         price: 800,
         icon: faBuilding,
+      },
+      {
+        id: "office-standard",
+        name: "IT Services",
+        description: "Office automation & collaboration",
+        price: 800,
+        icon: faLaptop,
       },
     ],
   },
