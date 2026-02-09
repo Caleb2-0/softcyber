@@ -16,7 +16,7 @@ export default function SolutionsSection() {
   const [selected, setSelected] = useState<SelectedProduct | null>(null);
 
   return (
-    <section className="mx-auto max-w-7xl px-6 py-8">
+    <section className="mx-auto max-w-7xl px-6 mb-10">
       <h2 className="text-center text-4xl mb-10">Our Solutions</h2>
       <div className="space-y-16">
         {solutionsData.map((category) => (

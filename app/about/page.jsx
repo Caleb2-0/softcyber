@@ -6,16 +6,16 @@ import { motion } from 'framer-motion'
 const page = () => {
   return (
     <div className='w-full'>
+      <h2 className='text-center text-4xl mb-10'>About us</h2>
       <motion.div initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
       transition={{ duration: 0.8 }}>
-        <h2 className='text-center text-4xl mb-10'>About us</h2>
         <div className='flex flex-col items-center md:flex-row text-center md:text-left justify-between w-full h-fit'>
           <div className='w-full'>
             <p className='text-xl'>At SoftCyber Technologies, we are more than just an IT service provider; we are your dedicated partner in Malawi's digital transformation. Founded in Lilongwe, we specialize in delivering custom, reliable, and affordable technology solutions—from dynamic website development to robust cybersecurity, mobile applications, and enterprise systems. We understand the unique challenges and opportunities within the Malawian market, and we build every solution with local insight and global standards.</p>
           </div>
-          <div className='w-full'><Image src="/team/team.png" alt='softcerber team' width={600} height={200} className='rounded-lg'/></div>
+          <div className='w-full'><Image src="/team/team.jpeg" alt='softcerber team' width={600} height={200} className='rounded-lg'/></div>
         </div>
       </motion.div>
 

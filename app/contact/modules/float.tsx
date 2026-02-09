@@ -23,7 +23,8 @@ export default function FloatingInput({
           w-full
           px-[4px] py-[7px]
           text-[16px]
-          text-white
+          text-black
+          dark:text-white
           bg-transparent
           border border-[#86bfff]
           dark:border-gray-400
