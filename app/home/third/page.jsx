@@ -2,7 +2,10 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <h4 className='text-3xl font-semibold text-center mb-10'>our services</h4>
+      
+    </div>
   )
 }
 
